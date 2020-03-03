@@ -1,0 +1,28 @@
+XAMPP NO TERMINAL:
+
+sudo /opt/lampp/lampp start
+---------------------------------------------------
+
+XAMPP PELA INTERFACE DO PROGRAMA:
+
+sudo /opt/lampp/manager-linux-x64.run
+
+
+
+PERMISSÕES XAMPP
+
+sudo chmod -R 777 /opt/lampp  --> autoriza
+sudo chmod -R 777 /opt/lampp/htdocs
+sudo chmod -R 755 /opt/lampp/phpmyadmin  --> não autoriza
+-----------------------------------------------------
+
+INSTALANDO FONTES FIRACODE P USAR LIGATURE NO VSCODE:
+
+sudo apt install fonts-firacode
+------------------------------------------------------
+
+DESINSTALAR O NODE:
+
+nvm deactivate
+nvm uninstall v10.15.1
+

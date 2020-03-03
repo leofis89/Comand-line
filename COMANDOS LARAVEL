@@ -1,0 +1,68 @@
+COMANDOS LARAVEL: 
+---------------------------------------------------------------------
+
+CRIANDO PROJETO VIA COMPOSER:
+
+composer create-project --prefer-dist laravel/laravel <NOME DO PROJ>
+
+
+
+-----------------------------------------------------------------------------
+
+RODAR O SERVIDOR PHP:
+
+php artisan serve
+
+
+
+-----------------------------------------------------------------------------
+
+PERMISSÕES PARA O LARAVEL UTILIZAR CACHE PARA PRÓXIMOS PROJ *(SE NECESSÁRIO)
+
+
+sudo chown -R leonardo /home/leonardo/.composer/cache/repo/https---repo.packagist.org
+
+sudo chown -R leonardo /home/leonardo/.composer/cache/repo/https---repo.packagist.org
+
+
+SE AMBOS FALHAREM, USAR:
+
+ sudo chown -R leonardo /home/leonardo/.composer
+
+
+
+-----------------------------------------------------------------------------
+
+PROBLEMAS COM A CHAVE:
+
+1) LIMPAR E CONFIGURAR CACHE;
+
+php artisan config:clear
+php artisan config:
+
+2) GERAR A CHAVE:
+
+php artisan key:generate
+
+3) COPIAR SOMENTE O TRECHO DA CHAVE:
+
+Application key [base64:liX9R651x7kiT0XnTJ0DCT2ip9KOVGjDx8l1aBwOxd4=] set successfully.
+
+COPIAR ==> liX9R651x7kiT0XnTJ0DCT2ip9KOVGjDx8l1aBwOxd4=
+
+
+
+4) COLAR EM: 
+ projeto1-laravel/config/app.php
+
+5) SUBSTIRUIR:
+ 'key' => env('APP_KEY')
+
+ POR:
+ 'key' => env('liX9R651x7kiT0XnTJ0DCT2ip9KOVGjDx8l1aBwOxd4=')
+
+
+
+
+
+ 

@@ -1,0 +1,49 @@
+
+/******************** COMANDO PARA COMPILAR PROJETO COM VUE ****************/
+
+1-) VUE-CLI:
+
+ 1) npm i -g @vue/cli
+
+ 2) vue create <nome_do_projeto>
+
+ 3) Escolhe "default" ou "manual"
+
+ 4) cd <nome_do_projeto>
+
+ 5) npm run serve
+
+OBS: ADICIONANDO PLUGINS ( VUETIFY ) => Na pasta do projeto
+
+ 6) vue add vuetify
+
+OBS:  COM GERENCIADOR DE PACOTES:
+
+  $ yarn add vuetify
+  // OR
+  $ npm install vuetify
+
+-----------------------------------------------------------------------
+
+
+2-) PARA UM PROJETO QUE JÁ ESTA PRONTO:
+
+NO DIRETÓRIO DO PROJETO, DIGITE (USANDO NODE):
+
+ 1) npm install         => INSTALA AS DEPENDÊNCIAS DO Node.
+
+ 2) npm update          => ATUALIZA AS DEPENDÊNCIAS.
+
+ 3) npm run serve       => RODA O SERVIDOR.
+
+
+OBS: CASO DE O ERRO:
+Error: ENOSPC: System limit for number of file watchers reached, watch '/home/leonardo/Documentos/projeto-curso-vue/projeto-curso-vue/public' 
+at FSWatcher.start (internal/fs/watchers.js:165:26)
+
+UTILIZE O COMANDO: 
+ 
+ 1) echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+
+/***************************************************************************************************************************************************************/

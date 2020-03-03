@@ -1,0 +1,52 @@
+
+**************** COMANDOS PARA PROJETO LARAVEL ***********************
+
+PARA CRIAR UM PROJETO:
+
+1) RODE O PHP:
+
+ T: php -v
+
+
+
+2) ESCOLHA O DIRETÓRIO E EXECUTE:
+
+ T: composer create-project --prefer-dist laravel/laravel blog "5.5.*"
+
+
+
+3) PARA CIRAR AS TABELAS DO BANCO DE DADOS (CRIAS MIGRATIONS DO DB): 
+
+ T: php artisan migrate
+
+
+
+4) PARA ATIVAR O SISTEMA DE LOGIN (CRIA AS ROTAS E AS VIEWS):
+
+ T: php artisan make:auth
+
+
+
+5) PARA RODAR O SERVIDOR DO PHP 
+
+ T: php artisan serve
+
+
+/---------------------------------------------------------------------/
+
+
+PROJETO CRIADO, 
+1) PARA INSTALAR AS DEPENDÊNCIAS DO NODE (P/ EXECUTAR OS COMPONENTES DO VUE):
+
+ T: npm install
+
+
+
+2) PARA RODAR SERVIDOR DO NODE (EXECUTAR ALTERAÇÕES NO VUE):
+ 
+T: (RODAR O NODE) ==>             npm run dev
+   (ATUALIZAÇÕES AUTOMATICAS) ==> npm run watch
+
+/********************************************************
+
+

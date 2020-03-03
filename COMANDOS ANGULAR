@@ -1,0 +1,116 @@
+-------------------- ANGULAR CLI ---------------------------
+
+1) Instalar o cli:
+    npm install -g @angular/cli
+
+2) Nova aplicação:
+    ng new <nome da App>
+
+3) Entrar no diretório:
+    cd <nome da App>
+
+4) Rodar o servidor:
+    ng serve
+
+
+
+
+------------------CRIAR COMPONENTES VIA CLI -------------------------
+
+1) Digitar no derminal, no diretório Raiz (App1):
+
+    ng generate component <nome do componente>
+    
+
+
+
+
+---------------------- BOOTSTRAP --------------------------------
+
+Para add o Bootstrap na nossa aplicação, 
+
+1) Adicionamos via CDN no index.html, principal da app:
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"</script>
+
+2) Baixamos via npm, para pasta node_modules( FLAG --save ==> inclui no projeto):
+
+    npm install bootstrap --save
+
+3) Após baixar, vamos na pasta "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    
+    OBS:(CAMINHOS) ==> root: "", ( SE O ROOT ESTIVER EM OUTRO CAMINHO CARÁ ERRADO)
+
+   Copiamos o caminho acima no arquivo ANGULAR.JSON em "styles", assim:
+
+    "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+
+
+
+---------------------- jQuery --------------------------------
+
+1) Baixamos via npm, para pasta node_modules( FLAG --save ==> inclui no projeto):
+    
+    npm install jquery --save
+
+2) INCLUIR jQUERY E JAVASCRIPT DO BOOTSTRAP:
+
+   Após baixar, vamos na pasta "node_modules/jquery/dist/...
+    
+    OBS:(CAMINHOS) ==> root: "", ( SE O ROOT ESTIVER EM OUTRO CAMINHO CARÁ ERRADO)
+
+   No arquivo ANGULAR.JSON em "scripts", adicionamos:
+    
+    "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+             
+            ],
+
+
+
+
+---------------------- TETHER --------------------------------
+
+1) Baixamos via npm, para pasta node_modules( FLAG --save ==> inclui no projeto):
+
+    npm install tether --save
+
+2) INCLUIR TETHER:
+
+   Após baixar, vamos na pasta "node_modules/tether/dist/js/tether.min.js
+    
+    OBS:(CAMINHOS) ==> root: "", ( SE O ROOT ESTIVER EM OUTRO CAMINHO CARÁ ERRADO)
+
+   No arquivo ANGULAR.JSON em "scripts", adicionamos:
+    
+    "scripts": [
+              "node_modules/tether/dist/js/tether.min.js,
+            ],
+
+
+
+
+----------------- BUILD DE PROD / DEV ----------------------------
+
+1) No diretório da aplicação(AMBOS GERAM O DIST):
+    ng build         ==> Gera build desenvolvimento
+    ng build --prod  ==> Gera build de produção (Que é o que usamos)
+
+2) Compartilhar (de forma local) no diretório publico do APACHE:
+
+    2.1) Copiar todo conteudo da pasta "dist"  ==> "htdocs"
+    2.2) Acessar pelo: localhost:80
+
+
+
+
+
+
+
+
